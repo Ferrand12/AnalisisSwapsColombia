@@ -2,7 +2,7 @@ README ‧ AnalisisSwapsColombia
 
 Simulaciones Vasicek, valoración de swaps hipotecarios y análisis de riesgo para el mercado colombiano (2015-2024).
 
-⸻
+
 
 0. Motivación
 
@@ -15,7 +15,7 @@ El objetivo del proyecto es cuantificar:
 
 Todo se replica para tres escenarios macro: Optimista, Base y Pesimista.
 
-⸻
+
 
 1. Datos de entrada
 
@@ -29,7 +29,7 @@ Reproducibilidad
 Todos los datos crudos (series Banrep, SuperFinanciera) se levantaron con pandas-datareader y se fijan al 31-dic-2024.
 Las hojas de Excel solo almacenan el snapshot para no depender de APIs externas en cada corrida.
 
-⸻
+
 
 2. Metodología paso a paso
 
@@ -75,8 +75,6 @@ Bloque 4 – VaR 95 % del ahorro (12 meses)
 	•	Barras comparativas (figs_bloque4/VaR_comparativo.png)
 	•	Tabla resumen → bloque4_VaR.csv
 
-⸻
-
 3. Estructura de carpetas
 
 AnalisisSwapsColombia/
@@ -101,7 +99,7 @@ AnalisisSwapsColombia/
     └── Explicacion_graficas_swaps.docx
 
 
-⸻
+
 
 4. Dependencias
 
@@ -116,7 +114,7 @@ pip install -r requirements.txt
 
 Para reproducir exactamente los gráficos, utiliza Python 3.10+ (probado en 3.10, 3.11).
 
-⸻
+
 
 5. Cómo ejecutar todo el pipeline
 
@@ -127,7 +125,7 @@ python codigo_swaps/Bloque4.py
 
 Después de cada bloque encontrarás los PNG en la carpeta correspondiente y los CSV en data/.
 
-⸻
+
 
 6. Interpretación de las figuras clave
 
@@ -140,7 +138,7 @@ Hist_ (bloque 4)*	Distribución Monte Carlo del ahorro a 12 m; la línea roja = 
 VaR_comparativo.png	Resume VaR absoluto entre escenarios → mayor riesgo en Pesimista.
 
 
-⸻
+
 
 7. Limitaciones y próximos pasos
 	•	Modelo de tasas: se usa Vasicek simple; podría migrarse a CIR o HW1F calibrado a la curva TES.
@@ -148,14 +146,14 @@ VaR_comparativo.png	Resume VaR absoluto entre escenarios → mayor riesgo en Pes
 	•	Liquidez del swap: no incorpora CVA/DVA ni ajustes de funding.
 	•	Back-testing: integrar datos históricos de swaps ON-OIS vs IBR para validar spread estructural.
 
-⸻
+
 
 8. Contribuciones
 	1.	Fork & Pull Request: Describe la mejora (código limpio, nuevo bloque, actualización de datos).
 	2.	Issues: Etiqueta como bug, enhancement o question.
 	3.	Licencia: MIT — usa y adapta, dando crédito.
 
-⸻
+
 
 9. Referencias
 	•	Banco de la República (2024). Serie IBR 3 M.
@@ -163,7 +161,7 @@ VaR_comparativo.png	Resume VaR absoluto entre escenarios → mayor riesgo en Pes
 	•	Hull, J. (2022). Options, Futures and Other Derivatives.
 	•	Hannan, A. (2023). “Swap spreads in EM mortgage markets”, Journal of Fixed Income.
 
-⸻
+
 
 
 <p align="center"><b>Listo para clonar, correr y analizar.</b></p>
