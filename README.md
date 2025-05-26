@@ -78,7 +78,7 @@ Bloque 4 – VaR 95 % del ahorro (12 meses)
 3. Estructura de carpetas
 
 AnalisisSwapsColombia/
-├── ManuelaSanchez_codigo_swaps/   # código
+├── codigo_swaps/   # código
 │   ├── Bloque1.py
 │   ├── Bloque2.py
 │   ├── Bloque3.py
